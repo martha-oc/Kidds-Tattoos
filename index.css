@@ -348,17 +348,13 @@ footer {
   text-align: center;
 }
 
-
 .carousel {
   margin: 4rem auto;
-  width: min(95%, 1400px);
-  display: flex;
+  width: 100%;
   overflow: hidden;
-  pointer-events: none;
   position: relative;
-  overflow: hidden;
+  display: flex;
 }
-
 
 .carousel::before,
 .carousel::after {
@@ -410,18 +406,20 @@ footer {
 
 .group {
   display: flex;
-  justify-content: center;
+  flex-shrink: 0;
   gap: 1rem;
   animation: slide 30s linear infinite;
-  padding-right: 1em;
 }
 
 .image-wrapper {
-  height: clamp(280px, 60vw, 650px);     
+  height: 60vh;
+  min-height: 280px;
+  max-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .imagecard {
   max-width: 100%;
@@ -429,7 +427,6 @@ footer {
   width: auto;
   height: auto;
   display: block;
-  flex: 0 0 min(130vw, 200px);
   object-fit: contain;
 }
 
@@ -448,7 +445,7 @@ footer {
 
 }
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
 
     .card {
         flex: 0 0 92vw;
@@ -469,10 +466,11 @@ footer {
         font-size: 1.5rem;
     }
 
-}
+}*/
 
 .card {
-  flex: 0 0 min(80vw, 380px);
+  flex: 0 0 80vw;
+  max-width: 380px;
   background: white;
   border: 5px solid pink;
   border-radius: .5rem;
@@ -487,11 +485,9 @@ footer {
 }
 
 .cardheader {
-  font-size: clamp(1.8rem, calc(7vw + 1rem), 3.2rem);
+  font-size: clamp(1.5rem, 5vw, 3rem);
   text-align: center;
   padding: .75rem;
-  height: auto;
-
 }
 
 
@@ -501,14 +497,14 @@ footer {
     }
 
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
 
 
 .card a:link {
-  color: red;
+  color: black;
   text-decoration: none;
 }
 
@@ -522,7 +518,7 @@ footer {
 }
 
 .card a:active {
-  color: red;
+  color: pink;
 }
 
 
