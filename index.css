@@ -410,25 +410,26 @@ footer {
   animation: slide 20s linear infinite;
 }
 
-.group[aria-hidden="true"] {
+/*.group[aria-hidden="true"] {
   display: none;
-}
+}*/
 
 .image-wrapper {
   min-height: 0;
   width: 100%;
   display: flex;
+  flex-shrink: 1;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-.imagecard {
+/*.imagecard {
   object-fit: contain;
 }
 
 
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
 
   .card {
       flex: 0 0 90vw;
