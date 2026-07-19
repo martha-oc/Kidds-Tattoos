@@ -54,9 +54,8 @@ body {
   align-items: center;
 }
 
-
 .kiddtattoosheader {
-  font-size: clamp(1.8rem, calc(7vw), 5rem);
+  font-size: clamp(2.4rem, calc(7vw), 5rem);
   text-align: center;
   white-space: normal;
   margin-bottom: 2rem;
@@ -71,8 +70,9 @@ body {
 
 #kiddtattoologo {
   max-width: 23%;
-    height: auto;
-    margin: -1px;
+  height: auto;
+  margin: -1px;
+  animation: spin 3s ease-in-out 1;
 }
 
 @keyframes spin {
