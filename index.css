@@ -276,13 +276,17 @@ ul li a:hover {
 }
 
 
-.slider-caption {
+/*.slider-caption {
   text-align: center;
   font-size: 1.7rem;
   font-style: italic;
   color: #333;
   padding: 20px 15px;
   margin: 8px 10px;
+}*/
+
+.cardheader {
+  color: black;
 }
 
 a:link {
