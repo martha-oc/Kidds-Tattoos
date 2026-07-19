@@ -22,7 +22,7 @@ const links = [
 ];
 
 let currentIndex = 0;
-const sliderImage = document.getElementById("slider-image");
+//const sliderImage = document.getElementById("slider-image");
 
 const dotNav = document.getElementById("dot-nav");
 
@@ -68,7 +68,7 @@ function stopAutoRotate() {
   clearInterval(autoRotate);
 }
 
-document.getElementById("next-btn").addEventListener("click", () => {
+/*document.getElementById("next-btn").addEventListener("click", () => {
   nextImage();
   stopAutoRotate();
 });
@@ -76,7 +76,7 @@ document.getElementById("next-btn").addEventListener("click", () => {
 document.getElementById("prev-btn").addEventListener("click", () => {
   prevImage();
   stopAutoRotate();
-});
+});*/
 
 
 showImage(currentIndex);

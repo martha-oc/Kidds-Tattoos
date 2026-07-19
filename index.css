@@ -355,14 +355,10 @@ footer {
   display: flex;
   overflow: hidden;
   pointer-events: none;
-}
-
-
-
-.carousel {
   position: relative;
   overflow: hidden;
 }
+
 
 .carousel::before,
 .carousel::after {
@@ -421,7 +417,7 @@ footer {
 }
 
 .image-wrapper {
-  height: 650px;      
+  height: clamp(280px, 60vw, 650px);     
   display: flex;
   justify-content: center;
   align-items: center;
@@ -476,7 +472,7 @@ footer {
 }
 
 .card {
-  flex: 0 0 min(90vw, 400px); 
+  flex: 0 0 min(80vw, 380px);
   background: white;
   border: 5px solid pink;
   border-radius: .5rem;
