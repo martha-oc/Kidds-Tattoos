@@ -271,6 +271,13 @@ p{
   margin: 0;
 }
 
+a:link {
+  color: black;
+}
+
+#footerinfo:link {
+  color: rgb(223, 43, 133);
+}
 
 
 footer {
