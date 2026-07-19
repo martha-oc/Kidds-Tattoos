@@ -474,7 +474,7 @@ footer {
   padding: .75rem;
   display: flex;
   flex-direction: column;
-  height: clamp(360px, 70vw, 650px);
+  height: auto;
 }
 
 .card,
