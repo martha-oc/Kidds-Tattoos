@@ -414,7 +414,8 @@ footer {
 
 .image-wrapper {
   width: 100%;
-  height: clamp(250px, 50vw, 500px);
+  flex: 1;
+  min-height: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -468,13 +469,13 @@ footer {
 .card {
   flex: 0 0 clamp(280px, 80vw, 380px);
   max-width: 380px;
+  height: clamp(380px, 75vw, 620px);
   background: white;
   border: 5px solid pink;
   border-radius: .5rem;
   padding: .75rem;
   display: flex;
   flex-direction: column;
-  height: auto;
 }
 
 .card,
