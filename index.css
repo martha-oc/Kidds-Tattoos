@@ -414,7 +414,7 @@ footer {
 
 .image-wrapper {
   width: 100%;
-  height: clamp(280px, 60vw, 600px);
+  height: clamp(250px, 50vw, 500px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -474,6 +474,7 @@ footer {
   padding: .75rem;
   display: flex;
   flex-direction: column;
+  height: clamp(360px, 70vw, 650px);
 }
 
 .card,
@@ -484,7 +485,9 @@ footer {
 .cardheader {
   font-size: clamp(1.5rem, 5vw, 3rem);
   text-align: center;
-  padding: .75rem;
+  padding: .5rem;
+  line-height: 1.2;
+  flex-shrink: 0;
 }
 
 
