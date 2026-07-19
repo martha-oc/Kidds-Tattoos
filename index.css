@@ -407,6 +407,7 @@ footer {
 .group {
   display: flex;
   flex-shrink: 0;
+  width: max-content;
   gap: 1rem;
   animation: slide 30s linear infinite;
 }
@@ -430,7 +431,7 @@ footer {
   object-fit: contain;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
 
   .card {
       flex: 0 0 90vw;
@@ -445,7 +446,7 @@ footer {
 
 }
 
-/*@media (max-width: 480px) {
+@media (max-width: 480px) {
 
     .card {
         flex: 0 0 92vw;
@@ -469,7 +470,7 @@ footer {
 }*/
 
 .card {
-  flex: 0 0 80vw;
+  flex: 0 0 clamp(280px, 80vw, 380px);
   max-width: 380px;
   background: white;
   border: 5px solid pink;
