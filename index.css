@@ -10,13 +10,11 @@ html {
   min-height: 100%;
   margin: 0;
   overflow-x: hidden;
-  box-sizing: border-box;
 }
 
 body {
   min-height: 100%;
   margin: 0;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -205,7 +203,7 @@ ul li a:hover {
 }
 
 
-#slider-image {
+/*#slider-image {
   display: block;
   margin: 50px auto;
   margin-bottom: 10px;
@@ -276,7 +274,7 @@ ul li a:hover {
 }
 
 
-/*.slider-caption {
+.slider-caption {
   text-align: center;
   font-size: 1.7rem;
   font-style: italic;
@@ -285,16 +283,35 @@ ul li a:hover {
   margin: 8px 10px;
 }*/
 
+.gallery {
+    width: min(1200px, 95%);
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    border: 5px solid pink;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .3s;
+    background:white;
+    border-radius:1px;
+    padding: 15px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.35);
+}
+
 .cardheader {
   color: black;
 }
 
 a:link {
   color: black;
-}
-
-#footerinfo:link {
-  color: rgb(223, 43, 133);
 }
 
 .jersey-15-regular {
@@ -326,14 +343,9 @@ footer {
 }
 
 
-#insta-icon {
-  text-align: center;
-}
-
 #footerinfo {
   display: flex;
   justify-content: center;
-  overflow: auto;
   margin-top: 50px;
 }
 
@@ -342,54 +354,13 @@ footer {
 }
 
 .contact-info {
-  overflow: scroll;
-  overflow-x: hidden;
-  overflow-y: hidden;
   text-align: center;
 }
 
-.carousel {
-  margin: 4rem auto;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel::before,
-.carousel::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 5vw;
-  height: 100%;
-  z-index: 10;
-  pointer-events: none;
-}
-
-.carousel::before {
-    left: 0;
-    background: linear-gradient(to right,
-        rgb(0, 0, 0),
-        rgba(234,183,199,0));
-}
-
-.carousel::after {
-    right: 0;
-    background: linear-gradient(to left,
-        rgb(12, 1, 4),
-        rgba(234,183,199,0));
-}
 
 
 
-
-
-.carousel:hover .group {
-  animation-play-state: paused;
-}
-
-
-.card {
+/*.card {
   transition: transform .3s ease,
               box-shadow .3s ease;
 }
@@ -399,9 +370,6 @@ footer {
   box-shadow: 0 15px 35px rgba(0,0,0,.35);
 }
 
-.carousel::-webkit-scrollbar {
-  display: none;
-}
 
 .group {
   display: flex;
@@ -411,9 +379,9 @@ footer {
 }
 
 
-/*.group[aria-hidden="true"] {
+.group[aria-hidden="true"] {
   display: none;
-}*/
+}
 
 .image-wrapper {
   height: 85%;
@@ -424,7 +392,7 @@ footer {
   overflow: hidden;
 }
 
-/*.imagecard {
+.imagecard {
   object-fit: contain;
 }
 
@@ -465,7 +433,7 @@ footer {
         font-size: 1.5rem;
     }
 
-}*/
+}
 
 .card {
   flex: 0 0 clamp(260px, 75vw, 380px);
@@ -490,9 +458,28 @@ footer {
   height: 100%;
   width: 100%;
   text-decoration: none;
+}*/
+
+.image-wrapper{
+    aspect-ratio:1/1;
+    overflow:hidden;
 }
 
-.cardheader {
+.imagecard{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.cardheader{
+  padding:1rem;
+  text-align:center;
+  font-size:clamp(1.6rem,3vw,2.6rem);
+  font-family:"Abril Fatface", serif;
+}
+
+/*.cardheader {
   height: 15%;
   display: flex;
   justify-content: center;
@@ -506,18 +493,15 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}*/
+
+@media (max-width:768px){
+
+.gallery{
+    grid-template-columns:1fr;
+    width:90%;
 }
-
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
 }
-
 
 
 .card a:link {
