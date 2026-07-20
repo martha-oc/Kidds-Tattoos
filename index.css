@@ -136,6 +136,10 @@ ul li a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.menu-toggle {
+    display: none;
+}
+
 
 @media (max-width: 900px) {
   .navbar ul {
@@ -147,6 +151,38 @@ ul li a:hover {
   .navbar li:not(:first-child)::before {
     display: none;
   }
+}
+
+@media (max-width: 900px) {
+
+    .menu-toggle {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        background-image: linear-gradient(to right, black, #EAB7C7, white, #EAB7C7, black);
+        cursor: pointer;
+        font-family: "Times New Roman", Times, Arial, sans-serif;
+        font-size: clamp(2.5rem, 3vw, 3.5rem);
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar ul {
+      display:none;
+    }
+
+    .navbar ul.active {
+      display: flex;
+      flex-direction: column;
+    }
 }
 
 
@@ -234,6 +270,7 @@ ul li a:hover {
 
 .cardheader {
   color: black;
+  font-family: "Times New Roman", Times, Arial, sans-serif;
 }
 
 a:link {
@@ -269,7 +306,7 @@ footer {
 
 .insta-link {
   font-size: clamp(1.2rem, calc(4vw + 1rem), 3.8rem);
-  font-family: "Abril Fatface";
+  font-family: "Times New Roman", Times, Arial, sans-serif;
 }
 
 #footerinfo {
