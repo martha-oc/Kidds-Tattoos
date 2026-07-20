@@ -9,13 +9,11 @@ html {
   min-height: 100%;
   margin: 0;
   overflow-x: hidden;
-  box-sizing: border-box;
 }
 
 body {
   min-height: 100%;
   margin: 0;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -55,7 +53,7 @@ body {
 
 
 .kiddtattoosheader {
-  font-size: clamp(1.8rem, calc(7vw), 5rem);
+  font-size: clamp(2.4rem, calc(7vw), 5rem);
   text-align: center;
   white-space: normal;
   margin-bottom: 2rem;
@@ -315,11 +313,11 @@ ul li a:hover {
   justify-content: center;
 }
 
- .fakeskin-img {
-   cursor: pointer;
-   transition: transform 0.3s ease;
-   opacity: 1;
- }
+.fakeskin-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  opacity: 1;
+}
 
 .enlarged {
   display: block;

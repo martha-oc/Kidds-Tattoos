@@ -9,13 +9,11 @@ html {
   min-height: 100%;
   margin: 0;
   overflow-x: hidden;
-  box-sizing: border-box;
 }
 
 body {
   min-height: 100%;
   margin: 0;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -32,7 +30,6 @@ body {
 
 .heading{
   margin: 0 auto;
-
 }
 
 .abril-fatface-regular {
@@ -55,10 +52,8 @@ body {
   align-items: center;
 }
 
-
-
 .kiddtattoosheader {
-  font-size: clamp(1.8rem, calc(7vw), 5rem);
+  font-size: clamp(2.4rem, calc(7vw), 5rem);
   text-align: center;
   white-space: normal;
   margin-bottom: 2rem;
@@ -71,16 +66,15 @@ body {
   font-weight: 200;
 }
 
-
 #kiddtattoologo {
   max-width: 23%;
-    height: auto;
-    margin: -1px;
+  height: auto;
+  margin: -1px;
 }
 
 
 
-@keyframes spin {
+/*@keyframes spin {
   0% {
 
   }
@@ -88,7 +82,7 @@ body {
     transform: rotate(360deg);
     border-radius: 50%;
   }
-}
+}*/
 
 .tattoo-gun {
   height: 3.3rem;

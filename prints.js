@@ -23,17 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     function closeGallery() {
-
         images.forEach(img => img.classList.remove("enlarged"));
 
         overlay.classList.remove("active");
         currentIndex = -1;
     }
-
     
-
-
-
+    
 
     images.forEach((img, index) => {
 

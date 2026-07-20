@@ -9,13 +9,11 @@ html {
     min-height: 100%;
     margin: 0;
     overflow-x: hidden;
-    box-sizing: border-box;
 }
 
 body {
     min-height: 100%;
     margin: 0;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -75,7 +73,7 @@ body {
   animation: spin 3s ease-in-out 1;
 }
 
-@keyframes spin {
+/*@keyframes spin {
   0% {
 
   }
@@ -83,7 +81,7 @@ body {
     transform: rotate(360deg);
     border-radius: 50%;
   }
-}
+}*/
 
 .tattoo-gun {
   height: 3.3rem;

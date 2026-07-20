@@ -9,13 +9,11 @@ html {
   min-height: 100%;
   margin: 0;
   overflow-x: hidden;
-  box-sizing: border-box;
 }
 
 body {
   min-height: 100%;
   margin: 0;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -40,8 +38,6 @@ body {
   font-style: normal;
 }
 
-
-
 .headersection {
   font-family: "Times New Roman", Times, Arial, sans-serif;
   display: flex;
@@ -58,7 +54,7 @@ body {
 
 
 .kiddtattoosheader {
-  font-size: clamp(1.8rem, calc(7vw), 5rem);
+  font-size: clamp(2.4rem, calc(7vw), 5rem);
   text-align: center;
   white-space: normal;
   margin-bottom: 2rem;

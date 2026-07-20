@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
     overlay.addEventListener("click", closeGallery);
 
     
-    
     document.addEventListener("keydown", (e) => {
 
         if (!overlay.classList.contains("active")) return;

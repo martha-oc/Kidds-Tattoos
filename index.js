@@ -1,4 +1,4 @@
-const captionEl = document.getElementById("slider-caption");
+/*const captionEl = document.getElementById("slider-caption");
 
 const images = [
   "fakeskinimages/fakeskin1.jpeg",
@@ -22,7 +22,7 @@ const links = [
 ];
 
 let currentIndex = 0;
-//const sliderImage = document.getElementById("slider-image");
+const sliderImage = document.getElementById("slider-image");
 
 const dotNav = document.getElementById("dot-nav");
 
@@ -68,7 +68,7 @@ function stopAutoRotate() {
   clearInterval(autoRotate);
 }
 
-/*document.getElementById("next-btn").addEventListener("click", () => {
+document.getElementById("next-btn").addEventListener("click", () => {
   nextImage();
   stopAutoRotate();
 });
@@ -76,7 +76,7 @@ function stopAutoRotate() {
 document.getElementById("prev-btn").addEventListener("click", () => {
   prevImage();
   stopAutoRotate();
-});*/
+});
 
 
 showImage(currentIndex);
@@ -104,4 +104,4 @@ function updateDots(index) {
 
 
 createDots();
-showImage(currentIndex);
+showImage(currentIndex);*/
