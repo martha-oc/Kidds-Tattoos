@@ -67,12 +67,12 @@ body {
 }
 
 #kiddtattoologo {
-  max-width: 23%;
+  max-width: 19%;
+  min-width: 14%;
   height: auto;
-  margin: -1px;
+  margin: -5px;
+  animation: spin 3s ease-in-out 1;
 }
-
-
 
 /*@keyframes spin {
   0% {
