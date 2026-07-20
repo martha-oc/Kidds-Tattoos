@@ -206,6 +206,7 @@ ul li a:hover {
         border: none;
         background-image: linear-gradient(to right, black, #EAB7C7, white, #EAB7C7, black);
         cursor: pointer;
+        color: black;
         font-family: "Times New Roman", Times, Arial, sans-serif;
         font-size: clamp(2.5rem, 3vw, 3.5rem);
     }
